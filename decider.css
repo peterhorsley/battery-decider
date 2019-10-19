@@ -1,0 +1,63 @@
+body {
+  background-color: #202020;
+}
+
+p, span, input, label, .field-label, .score {
+  font-size: 14px;
+  color: #aaa;
+  font-family: monospace;
+}
+
+h1 {
+  color: #aaa;
+  font-family: monospace;
+}
+
+input {
+  background-color: #222;
+}
+
+button {
+  font-size: 14px;
+  font-family: monospace;
+}
+
+.key-field {
+  width: 300px;
+}
+
+.userid-field {
+  width: 300px;
+}
+
+.formsubmitbutton {
+  margin-top: 10px;
+  min-width: 80px;
+}
+
+.form-container {
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  background: #101010;
+  max-width: 500px;
+  padding-bottom: 20px;
+  margin-top: 10px;
+}
+
+.box-header {
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  padding: 10px;
+  background: #024087;
+  max-width: 500px;
+  margin-bottom: 20px;
+}
+
+.box-row {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.top-margin {
+  margin-top: 10px;
+}

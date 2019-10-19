@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+  <title>Battery Decider</title>
+  <link rel="stylesheet" href="decider.css">
+  <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+  <script type = "text/javascript" src="decider.js"></script>
+</head>
+
+<body>
+  <h1>Battery Decider</h1>
+  <div class="form-container">
+    <div>
+      <div class="box-header">
+        <span>Enlighten API credentials</span>
+      </div>
+      <div class="box-row top-margin">
+        <div class="field-label">Key:</div>
+        <input class="key-field" type="text" placeholder="Your API key">
+      </div>
+      <div class="box-row top-margin">
+        <div class="field-label">User id:</div>
+        <input class="userid-field" type="text" placeholder="Your user id">
+      </div>
+      <div class="box-row top-margin">
+        <div class="field-label">System id:</div>
+        <input class="systemid-field" type="text" placeholder="Your system id">
+      </div>
+      <div class="box-row top-margin">
+        <div class="field-label">Start date:</div>
+        <input class="startdate-field" type="date">
+      </div>
+      <div class="box-row top-margin">
+        <div class="field-label">End date:</div>
+        <input class="enddate-field" type="date">
+      </div>
+      <div class="box-row">
+        <button class="formsubmitbutton" type="button" onclick="decide()">Decide</button>
+      </div>
+    </div>
+  </div>
+  <div class="results"></div>
+</body>
+</html>
