@@ -8,6 +8,7 @@ This app will will make 2 API calls, one to get production data and one to get c
 
 - average daily production
 - average daily consumption
+- average daily net energy
 - average daily energy exported to grid
 - average daily energy imported from grid
 
