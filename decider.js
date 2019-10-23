@@ -50,7 +50,7 @@ function processData() {
   var dailyConsumptionWh = getDailyWhValues(consumptionData.intervals, getWhFromConsumptionInterval);
   var dailyNetWh = [];
   for (var i = 0; i < dailyConsumptionWh.length; i++) {
-    dailyNetWh.push(dailyConsumptionWh[i] -= dailyProductionWh[i]);
+    dailyNetWh.push(dailyConsumptionWh[i] - dailyProductionWh[i]);
   }
   var averageDailyProductionWh = getAverage(dailyProductionWh);
   var averageDailyConsumptionWh = getAverage(dailyConsumptionWh);
@@ -65,10 +65,11 @@ function processData() {
   var resultsDiv = document.getElementsByClassName("results")[0];
 
   var html = "";
-  html += "<p>Average daily production (wh): " + averageDailyProductionWh + "</p>";
-  html += "<p>Average daily consumption (wh): " + averageDailyConsumptionWh + "</p>";
-  html += "<p>Average daily exported (wh): " + averageDailyExportedWh + "</p>";
-  html += "<p>Average daily imported (wh): " + averageDailyImportedWh + "</p>";
+  html += "<p>Average daily production (wh): " + averageDailyProductionWh + "<br>";
+  html += "Average daily consumption (wh): " + averageDailyConsumptionWh + "<br>";
+  html += "Average daily net energy (wh): " + averageDailyNetWh + "<br>";
+  html += "Average daily exported (wh): " + averageDailyExportedWh + "<br>";
+  html += "Average daily imported (wh): " + averageDailyImportedWh + "</p>";
 
   resultsDiv.innerHTML = html;
 }
@@ -78,7 +79,7 @@ function getAverage(list) {
   for (var i = 0; i < list.length; i++) {
     total += list[i];
   }
-  return total / list.length;
+  return Math.round(total / list.length);
 }
 
 function getWhFromProductionInterval(interval) {
