@@ -1,6 +1,9 @@
 # battery-decider
 Uses Enphase Enlighten API to help decision around battery storage.
 
+NOTE: This repo is now deprecated, in favor of a c# console application as Enphase API settings have changed.
+Updated repo that provides the same functionality is here: https://github.com/peterhorsley/batterydecider
+
 # How to use
 Load decider.html in chrome, enter your Enlight API key, user id and system id, choose a date range and press Decide.
 
